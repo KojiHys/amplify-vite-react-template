@@ -1,13 +1,41 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アンケートフォーム</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-white">
+  <div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-4">アンケートフォーム</h1>
+    <form>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="company-name">
+          企業名
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="company-name" type="text" placeholder="企業名を入力してください">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="ismap-number">
+          ISMAP登録番号
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="ismap-number" type="text" placeholder="ISMAP登録番号を入力してください">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2" for="address">
+          住所
+        </label>
+        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" rows="3" placeholder="住所を入力してください"></textarea>
+      </div>
+      <div class="flex items-center justify-between">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          送信する
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
+
