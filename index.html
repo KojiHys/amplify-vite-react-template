@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>アンケートフォーム</title>
+    <title>これはAmplifyでホストされているアンケートフォームです</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-blue-100">
     <div class="flex justify-center items-center h-screen">
         <div class="bg-white p-8 rounded-lg shadow-md">
-            <h1 class="text-8xl font-bold mb-6">これはAmplifyでホストされたWebサイトです</h1>
+            <h1 class="text-2xl font-bold mb-6">アンケートフォーム</h1>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="company-name">
+                        企業名
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="company-name" type="text" placeholder="企業名を入力してください">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="business-number">
+                        事業者番号
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="business-number" type="text" placeholder="事業者番号を入力してください">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="registration-date">
+                        登録日
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="registration-date" type="text" placeholder="登録日を入力してください">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-bold mb-2" for="registrant-name">
+                        登録者氏名
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="registrant-name" type="text" placeholder="登録者氏名を入力してください">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        送信
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
